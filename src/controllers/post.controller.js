@@ -75,8 +75,6 @@ const getPosts = asyncHandler (async (req, res) => {
     .skip(startIndex)
     .limit(limit)
 
-    console.log(sortDirection);
-    console.log(req.query.sort);
     const totalPosts = await Post.countDocuments();
 
     const now = new Date()

@@ -5,7 +5,8 @@ import asyncHandler from "../utils/asycHandler.js";
 
 const cookieOptions = {
     httpOnly: true,
-    secure: true
+    secure: true,
+    domain:"https://sadh-blog-app.netlify.app/"
 }
 
 const generateAccessAndRefreshToken = async (userId) => {
